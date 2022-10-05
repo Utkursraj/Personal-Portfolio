@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="stylesheet" href="personalportfolio.css">
+</head>
+<body>
+    
+    <header>
+ <div class="user">
+     <img src="1650730775736.jpg" alt="#">
+     <h3 class="name">Utkurs Raj</h3>
+     <p class="post">Web developer || Programmer</p>
+ </div>
+ <nav class="navbar">
+     <ul>
+     <li><a href="index.html">Home</a></li>
+     <li><a href="#about">About</a></li>
+     <li><a href="#project">Projects</a></li>
+     <li><a href="#contact">Contact</a></li>
+     <li><a href="https://www.linkedin.com/in/utkurs-raj">Linkdin</a></li>
+     <li><a href="https://github.com/Utkursraj">Github</a></li>
+    </ul>
+ </nav>
+
+    </header>
+    <div id="menu" class="fas fa-bars"></div>
+   <section class="Home" id="Home">
+<h3>Hii there</h3>
+<h1>I'M <span>UTKURS RAJ</span></h1>
+<p>Web Developer || Programer</p>
+ </section>
+
+
+ <section class="about"  id="about">
+
+ <div class="picture">
+    <p class="pic"><img src="1650730775736.jpg" width="200px" height="200px"></p>
+ 
+     <p class="about">I'm Utkurs Raj and I'm a B.Tech (Electronics and Communication Engineering) student at the Government Engineering College in West Champaran, Bihar.
+ 
+         Front-end web development (HTML, CSS, BOOTSTRAP, JAVASCRIPT) is the majority of my stack.</p> 
+        
+     </div>
+    </section>
+
+
+
+
+    <section class="project" id="project">
+        <div class="projects">
+            <ul>
+           
+                <li><a href="https://utkursraj.github.io/Grade-Calculator/"><img src="Grade calculator.png"><br>Grade-Calculator</a></li>
+                <li><a href="https://utkursraj.github.io/Digital-Clock/"><img src="digital clock.png"><br>Digital-Clock</a></li>
+                <li><a href="https://utkursraj.github.io/Music-Player-clone/"><img src="Music player clone.png"><br>Music-Player-clone</a></li>
+                <li><a href="https://utkursraj.github.io/Analog-clock/"><img src="Analog.png"><br>Analog-clock</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <section class="contact" id="contact">
+    </header>
+    <div id="contacts">
+     <form onsubmit="event.preventDefault(); validateform()">
+         <h1>Contact Me</h1>
+         <label for="name">Name</label>
+         <input type="text" id="name" placeholder="Your Name">
+         <small class="error"></small>
+
+         <label for="email">Email</label>
+         <input type="email" id="email" placeholder="Your Email">
+         <small class="error"></small>
+
+         <label for="message">Message</label>
+        <textarea id="message" placeholder="Your message" rows="6"></textarea>
+         <small class="error"></small>
+         <div class="center">
+             <input type="submit" value="SendMessage">
+         </div>
+     </form>
+ </div>
+    </section>
+
+    <script src="contact.js">
+    
+    </script>
+</body>
+</html>

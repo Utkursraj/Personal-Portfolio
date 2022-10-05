@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+
+:root{
+    --yelllow:#f9ca24;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+*::selection{
+    background: var(--yelllow);
+    color: #333;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+html::-webkit-scrollbar-track{
+    background: #222;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--yelllow);
+}
+body{
+    background: #111;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+header{
+    height: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+    width:35rem ;
+    background:#1a1a1a ;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow:column;
+    text-align: center;
+}
+header .user img{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .7rem solid var(--yelllow);
+}
+header .user .name{
+    font-size: 3.5rem;
+    color: white
+}
+header .user .post{
+    font-size: 2rem;
+    color: rgb(213, 213, 213)
+}
+header .navbar{
+    width:100%;
+}
+header .navbar ul{
+   list-style: none;
+   padding: 1rem 3rem;
+
+}
+header .navbar ul li{
+    font-size: 2rem;
+}
+header .navbar ul li a{
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background: #333;
+    color: #fff;
+    border-radius: 5rem;
+}
+header .navbar ul li a:hover{
+    background: var(--yelllow);
+}
+#menu{
+    position: fixed;
+    background: #333;
+    top:2rem ; right:2rem ;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+
+
+@media (max-width:1200px)
+{
+    html{
+        font-size: 45%;
+      
+    }
+}
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.Home{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    color: white;
+    padding: 0 15rem;
+}
+.Home h3{
+    font-size: 3rem;
+    color: orange;
+}
+.Home h1{
+    font-size: 5rem;
+}
+
+.Home p{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: green;
+}
+/* ----------------About Section------------- */
+
+
+.picture{
+    
+   position: absolute;
+    width: 100vh;
+    height: 80vh;
+    background:white;
+     margin: 5rem;
+     background: #111;
+   
+}
+.pic img{
+    border-radius: 50%;
+    box-shadow: 0 0 0 .5rem skyblue;
+    margin: 3rem;
+}
+.about{
+    font-size: 3rem;
+    color: white;
+}
+.social{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+    background: rgb(34, 28, 28);
+
+box-shadow: 0 0 0 .5rem black;
+}
+.social img{
+height: 5rem;
+width: 5rem;
+background: white;
+border-radius: 50%;
+box-shadow: 0 0 0 .5rem black;
+  
+}
+.social ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.social ul li{
+padding: 4rem;
+list-style: none;
+}
+
+/* ----------------Projects Section------------- */
+
+.projects{
+   
+height: 100vh;
+width: 100%;
+background:  #111;
+
+}
+.projects ul{
+    padding: 5rem;  
+   
+}
+.projects ul li{
+  display: inline-block;
+list-style: none;
+padding: 3rem;
+font-size: 2.5rem;
+
+
+}
+
+
+.projects img{
+    height: 20vh;
+    width: 40vh;
+    vertical-align: middle;
+    
+}
+
+/* ----------------contact Section------------- */
+#contacts{
+  
+    width: 100%;
+    height: 100%;
+background: #111;
+
+
+}
+form{
+    
+    max-width: 650px;
+    width: 90%;
+    height: 75vh;
+    background: rgb(255, 234, 0);
+   margin: 22vh 25vh;
+    border-radius: 1.25rem;
+    box-sizing: border-box;
+    padding: 10rem;
+   
+  
+}
+h1{
+    
+    text-align: center;
+    font-size: 5rem;
+}
+label{
+    
+    display: block;
+    
+   font-size: 3rem;
+ 
+}
+input, textarea{
+   width: 100%;
+   padding: .5rem;
+   outline: none;
+   resize: none;
+   border: none;
+   border-bottom: 1px solid rgb(211, 193, 193);
+}
+.center{
+    text-align: center;
+}
+input[type="submit"]{
+    margin-top: 3rem;
+    width: 90%;
+    max-width: 200px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.error{
+ color:red;}
+
+
+.error-border{
+
+    border-bottom: 1px solid red;}
+
+#success{
+    color: green;
+}
